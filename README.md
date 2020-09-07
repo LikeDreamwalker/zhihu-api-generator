@@ -82,3 +82,13 @@ zaa只能在该选项卡下工作。
 Ver 1.00：
 
 如果你的题图是.png格式的透明文件，知乎有可能在服务器上同时生成了白底与源文件两个文件，当你通过zhihu-articles-api生成json文件后，仅能访问到前者。如果你的站点使用暗色主题或者夜间模式，有必要考虑使用其他来源的.png文件替换知乎源文件。
+
+## 感谢：
+
+将对象导出为JSON：
+
+https://blog.csdn.net/shijie_nihao/article/details/100544941
+
+依据自定义属性获取元素（原文已失效，此为转载链接）：
+
+https://blog.csdn.net/tju_tsubasa/article/details/71419265
