@@ -31,34 +31,38 @@ zaa只能在该选项卡下工作。
 示例：
 
 `{
-    "Article_0": {
-        "headline": "为K100 Pro更换更大容量的电池",
-        "url": "zhuanlan.zhihu.com/p/205607070",
-        "dateP": "2020-08-29T14:22:15.000Z",
-        "dateM": "2020-09-01T17:17:49.000Z",
-        "img": "https://pic4.zhimg.com/v2-8ac0ec7ef990ca579657ae5b8bea714c_r.jpg"
-    },
-    "Article_1": {
-        "headline": "ES6动态计算属性名的另外一种用法/属性名表达式",
-        "url": "zhuanlan.zhihu.com/p/199698763",
-        "dateP": "2020-08-26T15:24:06.000Z",
-        "dateM": "2020-08-27T02:42:41.000Z",
-        "img": "https://pic4.zhimg.com/v2-8ac0ec7ef990ca579657ae5b8bea714c_r.jpg"
-    },
-    "Article_2": {
-        "headline": "为Vuetify的UI组件添加滚动条",
-        "url": "zhuanlan.zhihu.com/p/196736891",
-        "dateP": "2020-08-24T10:25:53.000Z",
-        "dateM": "2020-08-24T10:25:53.000Z",
-        "img": "https://pic4.zhimg.com/v2-8ac0ec7ef990ca579657ae5b8bea714c_r.jpg"
-    },
-    "Article_3": {
-        "headline": "解决移动端左右滑动/溢出问题",
-        "url": "zhuanlan.zhihu.com/p/194403402",
-        "dateP": "2020-08-22T16:20:05.000Z",
-        "dateM": "2020-08-22T16:20:05.000Z",
-        "img": "https://pic4.zhimg.com/v2-8ac0ec7ef990ca579657ae5b8bea714c_r.jpg"
-    },
+  "Article_0": {
+    
+    "headline": "将知乎文章导出为API",
+    
+    "url": "zhuanlan.zhihu.com/p/223010853",
+    
+    "dateP": "2020-09-07T13:14:11.000Z",
+    
+    "dateM": "2020-09-07T13:14:11.000Z",
+    
+    "img": "https://pic4.zhimg.com/v2-8ac0ec7ef990ca579657ae5b8bea714c_r.jpg",
+    
+    "text": "前言 首先感谢 @Thencromance 对我的帮助，虽然我最后放弃了使用知乎官方的API。 如果你想使用知乎官方的API，可以访问他的文章： 内容 之所以放弃了API，原因在于知乎于20年上半年更新了反
+    爬…"
+  
+  },
+  
+  "Article_1": {
+    
+    "headline": "为K100 Pro更换更大容量的电池",
+    
+    "url": "zhuanlan.zhihu.com/p/205607070",
+    
+    "dateP": "2020-08-29T14:22:15.000Z",
+    
+    "dateM": "2020-09-01T17:17:49.000Z",
+    
+    "img": "https://pic4.zhimg.com/v2-8ac0ec7ef990ca579657ae5b8bea714c_r.jpg",
+    
+    "text": "前言 因为有很多人有这个需求，我把我自己更换电池的详细方案写出来备忘。 我不能保证解决方案适用于所有人，请务必测量实际尺寸，数据仅供参考，由此造成的任何损失我不承担任何责任。 解决方案 电池规格：504520…"
+  },
+    
     ...`
 
 ## zhihu-articles-api合法吗？
@@ -80,7 +84,9 @@ zaa只能在该选项卡下工作。
 ## 已知问题 与 版本更新：
 
 Ver 1.10:
+
 ·增加了获取预览内容的功能（text）
+
 ·添加了更多提示
 
 Ver 1.00：
