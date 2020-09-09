@@ -1,6 +1,6 @@
 // 作者： LikeDreamwalker
-// 版本： Ver 1.00
-// 更新日期： 20200907
+// 版本： Ver 1.10
+// 更新日期： 20200909
 // 想要了解更多有关LikeDreamwalker的内容？
 // 访问： ldwid.com
 
@@ -47,7 +47,25 @@ for (item in ContentItems) {
 		ContentItems,
 		temp
 	)[1].getAttribute("content");
-	info["Article_" + item] = new Articles(headline, url, dataP, dataM, img);
+	// 获取text
+	// 使用textContent规避元素内子元素
+	let text = getElementByAttr(
+		"span",
+		"itemprop",
+		"articleBody",
+		ContentItems,
+		temp
+	)[0].textContent;
+	// 存储至info对象
+	info["Article_" + item] = new Articles(
+		headline,
+		url,
+		dataP,
+		dataM,
+		img,
+		text
+	);
+
 	// 判断遍历是否完成
 	if (temp === ContentItems.length - 1) {
 		temp++;
@@ -59,11 +77,14 @@ for (item in ContentItems) {
 let authorName = document.getElementsByClassName("ProfileHeader-name")[0]
 	.textContent;
 saveJSON(info, authorName + ".json");
+alert("即将下载一个该页面用户名.json的文件，请避免浏览器拦截");
 
 // 导出json
 function saveJSON(data, filename) {
 	if (!data) {
-		alert("未得到数据");
+		alert(
+			"获取的内容有错误，你可能使用了过时的脚本或者该脚本还未更新，请联系我"
+		);
 		return;
 	}
 	if (typeof data === "object") {
@@ -105,10 +126,11 @@ function getElementByAttr(tag, attr, value, cla, temp) {
 	return aEle;
 }
 // 构造函数
-function Articles(headline, url, dateP, dateM, img) {
+function Articles(headline, url, dateP, dateM, img, text) {
 	this.headline = headline;
 	this.url = url;
 	this.dateP = dateP;
 	this.dateM = dateM;
 	this.img = img;
+	this.text = text;
 }
