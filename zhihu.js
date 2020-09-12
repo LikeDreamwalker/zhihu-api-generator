@@ -1,6 +1,6 @@
 // 作者： LikeDreamwalker
-// 版本： Ver 1.10
-// 更新日期： 20200909
+// 版本： Ver 1.20
+// 更新日期： 20200912
 // 想要了解更多有关LikeDreamwalker的内容？
 // 访问： ldwid.com
 
@@ -57,19 +57,15 @@ for (item in ContentItems) {
 		temp
 	)[0].textContent;
 	// 存储至info对象
-	info["Article_" + item] = new Articles(
-		headline,
-		url,
-		dataP,
-		dataM,
-		img,
-		text
-	);
+	info[item] = new Articles(headline, url, dataP, dataM, img, text);
 
 	// 判断遍历是否完成
 	if (temp === ContentItems.length - 1) {
-		temp++;
+		++temp;
 		console.log("Complete. We got " + temp + " articles.");
+		// 加入length属性
+		info.length = temp;
+		console.log(info.length);
 		break;
 	}
 }
