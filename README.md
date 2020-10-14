@@ -32,9 +32,9 @@ zag只能在对应选项卡下工作。
 
 **在该选项卡下，通过调试执行脚本，浏览器将会自动下载一个名为*用户名.json*的文件。**
 
-文章：https://github.com/LikeDreamwalker/zhihu-articles-json/blob/master/zhihu.js
+回答：https://github.com/LikeDreamwalker/zhihu-api-generator/blob/master/answer.js
 
-回答：亟待更新
+文章：https://github.com/LikeDreamwalker/zhihu-api-generator/blob/master/article.js
 
 专栏：亟待更新
 
@@ -45,42 +45,26 @@ zag只能在对应选项卡下工作。
 ```json
 [
     {
-        "headline": "JS中一个简单的合并对象/数组的思路",
-        "url": "https://zhuanlan.zhihu.com/p/262282842",
-        "dateP": "2020-10-06T15:25:13.000Z",
-        "dateM": "2020-10-06T15:25:13.000Z",
-        "img": "https://pic4.zhimg.com/v2-8ac0ec7ef990ca579657ae5b8bea714c_r.jpg",
-        "text": "前言 本文真的很简单，只是为了方便有需求的人，尽可能少走弯路。 为什么要合并 这是我在重构代码的时候的一个需求。简单来说，我会有若干个对象需要合并为一个对象。而这些对象为两层，如果直接展开或者赋值会涉及到深…",
+        "name": "如何看待黑尾酱在家中挂「东亚病夫」牌匾？",
+        "url": "https://www.zhihu.com/question/388466195/answer/1161408857",
+        "dateC": "2020-04-17T18:49:25.000Z",
+        "dateM": "2020-07-23T03:21:56.000Z",
+        "upvoteCount": "5928",
+        "commentCount": "290",
+        "img": "",
+        "text": "曾经听说过一套从天而降的掌法， 今天算是受教了。 我一直想不明白为什么会有人做这种事。 你说这是立场吧，挂在家里不让人知道。 你说这是信仰吧，平时藏的这么严也不展现出来。 恰饭，这怎么恰，这肯定是把自己饭碗扔了。 你要挂挂个笑川天皇， 或者挂个什么模型，表示工匠精神。 或者挂个什么意识形态明显的字， 挂个和哪个宗教人物或者自由斗士的合照…",
         "status": false,
         "statusB": true
     },
     {
-        "headline": "解决Vue中页面成功渲染数据undefined的问题",
-        "url": "https://zhuanlan.zhihu.com/p/260523407",
-        "dateP": "2020-09-30T14:30:32.000Z",
-        "dateM": "2020-10-03T02:50:54.000Z",
-        "img": "https://pic4.zhimg.com/v2-8ac0ec7ef990ca579657ae5b8bea714c_r.jpg",
-        "text": "前言 这个标题不太好取。 本文需要下面的知识： 问题描述 我最近的一个功能需求是通过axios获取我存储在COS中的json文件，同时渲染到页面上。 而问题就是，axios可以成功获取数据，组件也可以成功渲染，…",
-        "status": false,
-        "statusB": true
-    },
-    {
-        "headline": "浅析Vue的生命周期以及JS异步",
-        "url": "https://zhuanlan.zhihu.com/p/260811233",
-        "dateP": "2020-09-30T13:32:59.000Z",
-        "dateM": "2020-10-02T04:03:47.000Z",
-        "img": "https://pic4.zhimg.com/v2-8ac0ec7ef990ca579657ae5b8bea714c_r.jpg",
-        "text": "前言 Vue的生命周期和JS异步都是有很多文章的知识点，我之前也是一知半解，基本够用。 但是直到我在开发的时候真的遇到了问题，才发现如果不把这些知识点融汇到一起，很难解决实际问题。 我甚至觉得这是我离尤雨溪…",
-        "status": false,
-        "statusB": true
-    },
-    {
-        "headline": "如何快速调整显示器组的亮度？",
-        "url": "https://zhuanlan.zhihu.com/p/259647484",
-        "dateP": "2020-09-26T13:35:07.000Z",
-        "dateM": "2020-09-26T13:37:24.000Z",
-        "img": "https://pic2.zhimg.com/v2-8b58a57ba0923d23329abc16766da34c_r.jpg",
-        "text": "前言 Mac的情况我不清楚，但是Windows下调整显示器亮度其实是一个挺烦人的事。 我的显示器组为一个15.6寸的副屏，一个22寸的显示器，一个15.6寸的笔记本屏幕。 由于硬件原因，通过显示器本身调整亮…",
+        "name": "如何看待青海失联女大学生黄雨蒙疑吞食安眠药自杀？",
+        "url": "https://www.zhihu.com/question/411447989/answer/1379792074",
+        "dateC": "2020-08-02T17:49:47.000Z",
+        "dateM": "2020-08-09T15:00:27.000Z",
+        "upvoteCount": "2124",
+        "commentCount": "360",
+        "img": "https://pic4.zhimg.com/v2-1d04f95c8eefb9c4f8ce14453f02c2bd_bh.jpg?source=c8b7c179",
+        "text": "说个不好听的，自杀，你难道还能给自己安排好后事吗？ 你能把葬礼安排好就不错了，你还指望安排好谁给你收尸在哪火化用什么骨灰盒？ 你给殡仪馆说这些你确定人家不会报警救你？来救你了你还能自杀？ 那些站在楼顶桥边被…",
         "status": false,
         "statusB": true
     },
@@ -96,6 +80,16 @@ zag只能在对应选项卡下工作。
 但是，请不要将此脚本用于非你创作的内容，也不要将此脚本获取的内容用于商业目的，我不承担由于使用此脚本所造成的一切责任。
 
 ## 已知问题 与 版本更新：
+
+Ver 3.10:
+
+**现在，zag将以独立文件的方式存在**
+
+·**[新增]**answer.js, article.js
+
+·**[回调]**调整回调函数的延迟为100ms
+
+·**[BUG]**我没能修复undefined错误，但是undefined错误在一定情况下并不会影响脚本的正常运行。同时在大量测试中（450+回答）捕获数量略少，原因不明。
 
 Ver 3.00:
 
